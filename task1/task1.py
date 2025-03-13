@@ -1,7 +1,8 @@
 import math
+from sys import argv
 
-n = int(input()) #размер массива
-m = int(input()) #длина обхода
+n = int(argv[1]) #размер массива
+m = int(argv[2]) #длина обхода
 traversals = [] #обходы
 sample = [i for i in range(1, n + 1)]
 
