@@ -18,8 +18,11 @@ with open(f_values_name, "r") as f_values:
     data_values = json.load(f_values)
 
 tmp_values = {} #упрощенный словарь для обновления значений объектов {id: value}
+
 for i in data_values['values']:
     tmp_values.setdefault(i['id'], i['value'])
+
+del data_values
 
 def parse_json(data):    
     id = None
