@@ -9,6 +9,8 @@ import json
 
 f_tests_name = os.path.abspath('tests.json')
 
+print(os.path.dirname(os.path.abspath('tests.json')))
+
 print(f_tests_name)
 print(os.getcwd())
 
