@@ -1,9 +1,6 @@
 from sys import argv
 
-try:
-    path = argv[1]
-except:
-    print('Проблемы с доступом к файлу')
+path = argv[1]
 
 with open(path, "r") as f_digits:
     d_digits = [int(digit.replace('\n', '')) for digit in f_digits.readlines()]
